@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formas</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<form action="/registro" method="post">
+		<div class="field" id="name-container">
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre" placeholder="nombre" autofocus required>
+		</div>
+			<div class="field">
+			<label for="apellido">Apellido</label>
+			<input type="text" name="apellido" id="apellido" placeholder="apellido" required>
+		</div>
+			<div class="field">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="email" required>
+		</div>
+			<div class="field">
+				<label>Sexo</label> <br>
+			<input type="radio" name="sexo" id="hombre">
+			<label for="hombre">Hombre</label>
+			<input type="radio" name="sexo" id="mujer">
+			<label for="mujer">Mujer</label>
+		</div>
+		<div class="field">
+			<select name="estado" id="estado">
+				<option value="" disabled selected>Selecciona tu estado</option>
+				<option value="1">Aguascalientes</option>
+				<option value="2">Baja California</option>
+				<option value="3">Bja California Sur</option>
+				<option value="4">Campeche</option>
+				<option value="5">Chiapas</option>
+
+			</select>
+		</div>
+		<div class="field">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="pass" required>
+		</div>
+		<div class="field">
+			<label for="mensaje">¿Porque te estas registrando?</label> <br>
+		<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+	</div>
+	<div class="field">
+		<input type="checkbox" name="terminos" id="terminos" required>
+		<label for="terminos">Acepto los <a href="/terminos" target="_blank" title="terminos"> terminos y condiciones </a> </label>
+	</div>
+
+	<div class="field">
+		<!--<button>enviar</button> -->
+		<!-- <button type="submit">enviar</button> -->
+		<!-- <input type="button" value="enviar"> -->
+		<button>Enviar</button>
+	</div>
+
+
+
+
+
+	</form>
+</body>
+</html>

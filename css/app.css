@@ -1,0 +1,104 @@
+*{
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+
+}
+
+body{
+	background: #283747;
+}
+
+a{
+color: black;
+}
+
+a:hover {
+	color: blue;
+}
+
+a:active {
+	color: red;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"] {
+	background-color: #797D7F;
+}
+
+input[type="checkbox"]:checked + label {
+	color: #CB4335;
+}
+
+#name-container > label{
+	background-color: #BA4A00;
+}
+
+#name-container label:first-child {
+	background-color: #3498DB;
+	color: #D0D3D4;
+}
+
+input:focus {
+	background-color: #76D7C4;
+	color: white;
+}
+
+input:valid {
+	background-color: #7FB3D5;
+	color: white;
+}
+
+form {
+	width: 60%;
+	max-width: 600px; /* declara un limite maximo de ancho*/
+	min-width: 300px; /* declara un limite minimo de ancho*/
+	margin: 0 auto; /* declara valores para*/
+}
+
+input {
+	width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: auto;
+}
+
+input[type="checkbox"] + label, 
+input[type="radio"] + label {
+	width: auto;
+	display: inline-block;
+}
+
+label {
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	display: block;
+}
+
+textarea {
+	resize: none;
+}
+
+textarea,
+select,
+input {
+	width: 100%;
+	background-color: #D9D1C7;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 8px;
+	border: 1px solid #8C8681
+}
+
+.field {
+	float: left; /*left,right,none */
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+
+}
